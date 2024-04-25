@@ -1,0 +1,11 @@
+.app {
+  @apply text-center;
+
+  &__body {
+    @apply pt-16 grid grid-cols-[180px_1fr] h-screen;
+  }
+
+  &__pages {
+    @apply px-16 py-12;
+  }
+}

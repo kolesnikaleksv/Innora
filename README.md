@@ -27,4 +27,4 @@ The accounts page has a filter by names and sorts the account country names alph
 The middle page is for buty.
 
 ## Technologies Used:
-# React + TypeScript + Vite + Tailwind + Redux + Redux-Toolkit
+# React + React-routing + TypeScript + Vite + Tailwind + Redux + Redux-Toolkit + MUI + SCSS

@@ -1,76 +1,68 @@
 {
   "accounts": [
     {
-      "id": "1",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
-      "creationDate": "2011-07-29",
-      "country": "Germany",
-      "email": "email@com.sd",
-      "name": "Bayractar"
-    },
-    {
       "id": "2",
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
       "creationDate": "2011-07-29",
-      "country": "Unined Kingdom",
       "email": "email@com.sd",
-      "name": "Storm-shad"
+      "country": "Unined Kingdom",
+      "name": "Storm-shad",
+      "photo": "https://i.imgflip.com/k0bjz.jpg"
     },
     {
       "id": "3",
-      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png",
       "creationDate": "2011-07-29",
-      "country": "Uganda",
       "email": "email@com.sd",
-      "name": "Atacam"
+      "country": "Uganda",
+      "name": "Atacam",
+      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png"
     },
     {
       "id": "4",
-      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif",
       "creationDate": "2011-07-29",
-      "country": "Ukraine",
       "email": "email@com.sd",
-      "name": "Breadly"
+      "country": "Ukraine",
+      "name": "Breadly",
+      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif"
     },
     {
       "id": "5",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
       "creationDate": "2011-07-29",
-      "country": "Poland",
       "email": "email@com.sd",
-      "name": "Javelina"
+      "country": "Poland",
+      "name": "Javelina",
+      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif"
     },
     {
       "id": "6",
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
       "creationDate": "2011-07-29",
-      "country": "USA",
       "email": "email@com.sd",
-      "name": "Liubov"
+      "country": "USA",
+      "name": "Liubov",
+      "photo": "https://i.imgflip.com/k0bjz.jpg"
     },
     {
       "id": "7",
-      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png",
       "creationDate": "2011-07-29",
+      "email": "email@com.sd",
       "country": "Uganda",
-      "email": "email@com.sd",
-      "name": "Atacam"
-    },
-    {
-      "id": "8",
-      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif",
-      "creationDate": "2011-07-29",
-      "country": "Ukraine",
-      "email": "email@com.sd",
-      "name": "Breadly"
+      "name": "Atacam",
+      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png"
     },
     {
       "id": "9",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
       "creationDate": "2011-07-29",
-      "country": "Poland",
       "email": "email@com.sd",
-      "name": "Javelina"
+      "country": "Poland",
+      "name": "Javelina",
+      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif"
+    },
+    {
+      "id": "8",
+      "creationDate": "2011-07-29",
+      "email": "email@com.sd",
+      "country": "Ukraine",
+      "name": "Breadly",
+      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif"
     },
     {
       "id": "10",
@@ -105,239 +97,14 @@
       "name": "Javelina"
     }
   ],
-  "profiles": [
+  "deletedAccounts": [
     {
-      "id": 1,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
+      "id": "1",
+      "creationDate": "2011-07-29",
+      "email": "email@com.sd",
       "country": "Germany",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 2,
-      "marketPlace": "Uber",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
-      "country": "Unined Kingdom",
-      "belongAccountId": "2",
-      "date": "2017-10-06 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 3,
-      "marketPlace": "Amazon",
-      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif",
-      "country": "Ukraine",
-      "belongAccountId": "1",
-      "date": "2017-09-25 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 4,
-      "marketPlace": "Autotrader",
-      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png",
-      "country": "Uganda",
-      "belongAccountId": "2",
-      "date": "2017-10-06 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 5,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Poland",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 6,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Germany",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 7,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Germany",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 8,
-      "marketPlace": "Uber",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
-      "country": "USA",
-      "belongAccountId": "2",
-      "date": "2017-10-06 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 9,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Kenia",
-      "marketPlace": "Upwork",
-      "belongAccountId": "5",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 10,
-      "marketPlace": "Amazon",
-      "photo": "https://media.tenor.com/hgCiI7jO0sYAAAAi/canikeephim-dog.gif",
-      "country": "Ukraine",
-      "belongAccountId": "1",
-      "date": "2017-09-25 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 11,
-      "marketPlace": "Autotrader",
-      "photo": "https://clideo.com/assets/images/meme-templates/meme-demo-template-7-lg.png",
-      "country": "Sudan",
-      "belongAccountId": "2",
-      "date": "2017-10-06 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 12,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Poland",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 13,
-      "photo": "https://i.imgflip.com/k0bjz.jpg",
-      "country": "Portugese",
-      "marketPlace": "Upwork",
-      "belongAccountId": "3",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 14,
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
-      "country": "Portugese",
-      "marketPlace": "Upwork",
-      "belongAccountId": "6",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    },
-    {
-      "id": 15,
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
-      "country": "Portugese",
-      "marketPlace": "Upwork",
-      "belongAccountId": "6",
-      "date": "2017-06-29 12:09:33",
-      "name": "profile"
-    }
-  ],
-  "campaigns": [
-    {
-      "id": 1,
-      "clicks": 3,
-      "cost": 1000,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "1",
-      "name": "campaign"
-    },
-    {
-      "id": 2,
-      "clicks": 5,
-      "cost": 100,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 3,
-      "clicks": 10,
-      "cost": 1600,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 4,
-      "clicks": 14,
-      "cost": 1200,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "3",
-      "name": "campaign"
-    },
-    {
-      "id": 5,
-      "clicks": 3,
-      "cost": 1000,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "1",
-      "name": "campaign"
-    },
-    {
-      "id": 6,
-      "clicks": 5,
-      "cost": 100,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 7,
-      "clicks": 10,
-      "cost": 1600,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 8,
-      "clicks": 14,
-      "cost": 1200,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "3",
-      "name": "campaign"
-    },
-    {
-      "id": 9,
-      "clicks": 3,
-      "cost": 1000,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "1",
-      "name": "campaign"
-    },
-    {
-      "id": 10,
-      "clicks": 5,
-      "cost": 100,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 11,
-      "clicks": 10,
-      "cost": 1600,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "2",
-      "name": "campaign"
-    },
-    {
-      "id": 12,
-      "clicks": 14,
-      "cost": 1200,
-      "date": "2017-09-25 12:09:33",
-      "belongProfileId": "3",
-      "name": "campaign"
+      "name": "Bayractar",
+      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif"
     }
   ]
 }

@@ -28,9 +28,20 @@ const useDataService = () => {
     });
   }
 
+  const sendData = async (item: IAccount) => {
+    try{
+       await axios.post<IAccount>('http://localhost:5000/deletedAccounts/', item)
+       .then(function (response) {
+      })
+    } catch (error) {
+      throw new Error('Failed to fetch data');
+    }
+  }
+
   return {
     fetchData,
-    deleteData
+    deleteData,
+    sendData
   }
 }
 

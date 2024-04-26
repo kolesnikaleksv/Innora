@@ -1,6 +1,6 @@
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import getDate from '../services/getDate';
-import { AppDispatch, RootState } from '../../store/store';
+import { AppDispatch } from '../../store/store';
 import { IAccount } from '../../types';
 import { popupActive } from '../../actions/actions';
 
@@ -9,7 +9,7 @@ import './accountItem.scss';
 const AccountItem: React.FC<IAccount> = (props) => {
   const dispatch = useDispatch<AppDispatch>();
 
-  const { title, creationDate, email, country, id, name, photo} = props;
+  const { creationDate, email, country, id, name, photo} = props;
 
   return (
     <div className='item'>
@@ -31,7 +31,7 @@ const AccountItem: React.FC<IAccount> = (props) => {
         <span className='item__email item__email'>{email}</span>
         <span className='item__email item__email--description'>email</span>
       </div>
-      <div className='item__delete' onClick={() => dispatch(popupActive({id, title, creationDate, email, country, name, photo}))}>
+      <div className='item__delete' onClick={() => dispatch(popupActive({id, creationDate, email, country, name, photo}))}>
         <span className="material-symbols-outlined">
           delete
         </span>

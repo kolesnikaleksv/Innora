@@ -23,3 +23,5 @@ export const activeAccountFilter = createAction<string>('ACTIVE_ACCOUNT_FILTER')
 export const searchAccountFilter = createAction<string>('SEARCH_ACCOUNT_FILTER');
 
 export const accountDeleting = createAction<string>('ACCOUNT_DELETING');
+
+export const addDeletedAccount = createAction<IAccount>('ADD_DELETED_ACCOUNT');

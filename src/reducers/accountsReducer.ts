@@ -7,7 +7,8 @@ import {
   closePopup,
   activeAccountFilter,
   searchAccountFilter,
-  accountDeleting} from "../actions/actions";
+  accountDeleting,
+  addDeletedAccount } from "../actions/actions";
 import { IAccount } from "../types";
 
 interface IState {
@@ -17,7 +18,8 @@ interface IState {
   popupActive: boolean,
   popupItem: IAccount | null,
   activeFilter: string,
-  searchFilter: string
+  searchFilter: string,
+  deletedAccounts: IAccount[]
 }
 
 const initialState: IState = {
@@ -27,7 +29,8 @@ const initialState: IState = {
   popupActive: false,
   popupItem: null,
   activeFilter: 'All names',
-  searchFilter: ''
+  searchFilter: '',
+  deletedAccounts: []
 }
 
 const accountsReducer = createReducer(initialState, (builder) => {
@@ -57,6 +60,9 @@ const accountsReducer = createReducer(initialState, (builder) => {
     })
     .addCase(accountDeleting, (state, action) => {
       state.accounts = state.accounts.filter(item => item.id !== action.payload)
+    })
+    .addCase(addDeletedAccount, (state, action: PayloadAction<IAccount> ) => {
+      state.deletedAccounts.push(action.payload)
     })
     .addDefaultCase((state, action) => {})
 })

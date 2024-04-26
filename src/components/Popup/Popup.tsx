@@ -2,7 +2,7 @@
 import CloseButton from '../CloseButton/CloseButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../store/store';
-import { closePopup, deleteAccount } from '../../actions/actions';
+import { closePopup, deleteAccount, addDeletedAccount } from '../../actions/actions';
 import useDataService from '../services/DataService';
 
 import './popup.scss';
@@ -11,7 +11,7 @@ const Popup = () => {
 
   const popupItem = useSelector((state: RootState) => state.accountsReducer.popupItem);
   const dispatch = useDispatch<AppDispatch>();
-  const {deleteData} = useDataService();
+  const {deleteData, sendData} = useDataService();
 
   if(!popupItem) {
     return 'hello 2'
@@ -21,6 +21,8 @@ const Popup = () => {
   const deleteItem = (id: string) => {
     dispatch(deleteAccount(id))
     deleteData(id);
+    dispatch(addDeletedAccount(popupItem))
+    sendData(popupItem);
   }
   return (
     <div className='popup' onClick={() => dispatch(closePopup())}>

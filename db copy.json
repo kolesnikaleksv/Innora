@@ -2,11 +2,11 @@
   "accounts": [
     {
       "id": "1",
-      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
       "creationDate": "2011-07-29",
-      "country": "Germany",
       "email": "email@com.sd",
-      "name": "Bayractar"
+      "country": "Germany",
+      "name": "Bayractar",
+      "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif"
     },
     {
       "id": "2",
@@ -103,9 +103,7 @@
       "country": "Poland",
       "email": "email@com.sd",
       "name": "Javelina"
-    }
-  ],
-  "deletedAccounts": [
+    },
     {
       "id": 14,
       "photo": "https://media.tenor.com/8fBOQIG7-OEAAAAi/funny.gif",
@@ -124,5 +122,7 @@
       "date": "2017-06-29 12:09:33",
       "name": "profile"
     }
+  ],
+  "deletedAccounts": [
   ]
 }

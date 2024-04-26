@@ -1,5 +1,5 @@
 export type IAccount = {
-  accountId: string;
+  id: string;
   title: string;
   creationDate: string;
   country: string;

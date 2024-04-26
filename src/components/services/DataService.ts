@@ -16,8 +16,21 @@ const useDataService = () => {
     }
   }
 
+  const deleteData = (id: string) => {
+    axios.delete<IAccount>(`http://localhost:5000/accounts/${id}`) 
+    .then((response) => {
+      if (response.status === 200) {
+        console.log('Element deleted successfully.');
+      }
+    })
+    .catch((error) => {
+      console.error('Failed to delete element:', error);
+    });
+  }
+
   return {
-    fetchData
+    fetchData,
+    deleteData
   }
 }
 

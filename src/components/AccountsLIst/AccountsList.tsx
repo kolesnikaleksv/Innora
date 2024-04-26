@@ -13,11 +13,11 @@ const AccountsList = ({data}:{data: IAccount[]}) => {
   }
 
   const item = data.map(item => {
-    const {accountId} = item;
+    const {id} = item;
     
     return (
       <AccountItem 
-        key={accountId}
+        key={id}
         {...item}
       />
     )

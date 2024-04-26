@@ -2,20 +2,26 @@
 import CloseButton from '../CloseButton/CloseButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { AppDispatch, RootState } from '../../store/store';
-import { closePopup } from '../../actions/actions';
+import { closePopup, deleteAccount } from '../../actions/actions';
+import useDataService from '../services/DataService';
 
 import './popup.scss';
 
-const Popup= () => { 
+const Popup = () => { 
 
   const popupItem = useSelector((state: RootState) => state.accountsReducer.popupItem);
   const dispatch = useDispatch<AppDispatch>();
+  const {deleteData} = useDataService();
 
   if(!popupItem) {
     return 'hello 2'
   }
-  const {accountId, name, creationDate, email } = popupItem;
+  const {id, name, creationDate, email } = popupItem;
 
+  const deleteItem = (id: string) => {
+    dispatch(deleteAccount(id))
+    deleteData(id);
+  }
   return (
     <div className='popup' onClick={() => dispatch(closePopup())}>
       <div className='popup__container' >
@@ -35,7 +41,7 @@ const Popup= () => {
         </div>
         <div className='popup__footer'>
           <button className='popup-button popup-button--discard' onClick={() => dispatch(closePopup())}>discard</button>
-          <button className='popup-button popup-button--delete' onClick={() =>console.log('hello')}>
+          <button className='popup-button popup-button--delete' onClick={() => deleteItem(id)}>
             <span className="material-symbols-outlined">delete</span>
               delete
           </button>

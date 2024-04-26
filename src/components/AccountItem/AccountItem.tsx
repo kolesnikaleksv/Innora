@@ -7,14 +7,12 @@ import { popupActive } from '../../actions/actions';
 import './accountItem.scss';
 
 const AccountItem: React.FC<IAccount> = (props) => {
-  const activeItemId = useSelector((state: RootState) => state.accountsReducer.activeAccount);
-
   const dispatch = useDispatch<AppDispatch>();
 
-  const { title, creationDate, email, country, accountId, name, photo} = props;
+  const { title, creationDate, email, country, id, name, photo} = props;
 
   return (
-    <div className={`item ${activeItemId ? 'half-screen': ''} ${activeItemId === accountId ? 'active' : ''}`}>
+    <div className='item'>
       <div className='item__image'>
           <img src={photo} alt='user' />
         </div>
@@ -33,7 +31,7 @@ const AccountItem: React.FC<IAccount> = (props) => {
         <span className='item__email item__email'>{email}</span>
         <span className='item__email item__email--description'>email</span>
       </div>
-      <div className='item__delete' onClick={() => dispatch(popupActive({accountId, title, creationDate, email, country, name, photo}))}>
+      <div className='item__delete' onClick={() => dispatch(popupActive({id, title, creationDate, email, country, name, photo}))}>
         <span className="material-symbols-outlined">
           delete
         </span>

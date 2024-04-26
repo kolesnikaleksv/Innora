@@ -6,7 +6,8 @@ import {
   popupActive, 
   closePopup,
   activeAccountFilter,
-  searchAccountFilter} from "../actions/actions";
+  searchAccountFilter,
+  accountDeleting} from "../actions/actions";
 import { IAccount } from "../types";
 
 interface IState {
@@ -53,6 +54,9 @@ const accountsReducer = createReducer(initialState, (builder) => {
     })
     .addCase(searchAccountFilter, (state, action) => {
       state.searchFilter = action.payload;
+    })
+    .addCase(accountDeleting, (state, action) => {
+      state.accounts = state.accounts.filter(item => item.id !== action.payload)
     })
     .addDefaultCase((state, action) => {})
 })

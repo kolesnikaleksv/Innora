@@ -6,4 +6,7 @@
       @apply text-2xl font-bold my-2.5 text-gray text-left;
     }
   }
+  .item__delete {
+    @apply hidden;
+  }
 }

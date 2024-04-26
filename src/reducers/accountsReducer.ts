@@ -8,7 +8,10 @@ import {
   activeAccountFilter,
   searchAccountFilter,
   accountDeleting,
-  addDeletedAccount } from "../actions/actions";
+  addDeletedAccount,
+  deletedAccountsFetching,
+  deletedAccountsFetched,
+  deletedAccountsFetchingError } from "../actions/actions";
 import { IAccount } from "../types";
 
 interface IState {
@@ -19,7 +22,8 @@ interface IState {
   popupItem: IAccount | null,
   activeFilter: string,
   searchFilter: string,
-  deletedAccounts: IAccount[]
+  deletedAccounts: IAccount[],
+  deletedAccountsLoadingStatus: 'idle'  | 'loading' | 'error',
 }
 
 const initialState: IState = {
@@ -30,7 +34,8 @@ const initialState: IState = {
   popupItem: null,
   activeFilter: 'All names',
   searchFilter: '',
-  deletedAccounts: []
+  deletedAccounts: [],
+  deletedAccountsLoadingStatus: 'idle',
 }
 
 const accountsReducer = createReducer(initialState, (builder) => {
@@ -63,6 +68,16 @@ const accountsReducer = createReducer(initialState, (builder) => {
     })
     .addCase(addDeletedAccount, (state, action: PayloadAction<IAccount> ) => {
       state.deletedAccounts.push(action.payload)
+    })
+    .addCase(deletedAccountsFetching, state => {
+      state.deletedAccountsLoadingStatus = 'loading';
+    })
+    .addCase(deletedAccountsFetched, (state, action: PayloadAction<IAccount[]>) => {
+      state.deletedAccounts = action.payload;
+      state.deletedAccountsLoadingStatus = 'idle';
+    })
+    .addCase(deletedAccountsFetchingError, state => {
+      state.deletedAccountsLoadingStatus = 'error';
     })
     .addDefaultCase((state, action) => {})
 })

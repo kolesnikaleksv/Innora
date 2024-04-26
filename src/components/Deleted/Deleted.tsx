@@ -1,14 +1,24 @@
-import { useSelector } from 'react-redux';
-import { RootState } from '../../store/store';
+import { useDispatch, useSelector } from 'react-redux';
+import { AppDispatch, RootState } from '../../store/store';
 import AccountsList from '../AccountsLIst/AccountsList';
 import { IAccount } from '../../types';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AppPaginate from '../AppPaginate';
 
 import './deleted.scss'
+import useDataService from '../services/DataService';
+import { fetchDeletedAccounts } from '../../actions/actions';
 
 const Deleted = () => {
   const arrOfDeletedAccounts = useSelector((state: RootState) => state.accountsReducer.deletedAccounts);
+
+  const dispatch = useDispatch<AppDispatch>();
+  const {fetchData} = useDataService();
+  
+  useEffect(() => {
+    dispatch(fetchDeletedAccounts(fetchData))
+  },[])
+  
   const [products, setProducts] = useState<IAccount[]>([]);
 
   return (

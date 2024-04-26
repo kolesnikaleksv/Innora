@@ -20,7 +20,7 @@ const SortingBlock: React.FC<SortingBlockProps<IAccount>> = (props) => {
   return (
    <>
       <form action="#">
-        <label htmlFor="type">Type of products:</label>
+        <label htmlFor="type">Sort by name:</label>
         <select name="types" id="type" onChange={(e) => props.filterChange(e.target.value)}>
           {optionsList}
         </select>
